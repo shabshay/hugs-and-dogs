@@ -11,7 +11,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  color: #777;
+  color: rgb(85, 85, 85);
   line-height: 1.8;
   direction: rtl;
 }
@@ -26,9 +26,9 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('cover.jpeg');
-  min-height: 60%;
-  margin-top: 43px;
+  background-image: url('img4.jpeg');
+  min-height: 80%;
+  /* margin-top: 43px; */
 }
 
 /* Second image (Portfolio) */
@@ -66,24 +66,23 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-dog"></i> על כלבנות טיפולית</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-book-open"></i> תמונות</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> צרו קשר</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-red">
-      <i class="fa fa-search"></i>
+    <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-green">
+      <i class="fa fa-whatsapp"></i>
     </a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">אודות</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">תמונות</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">צרו קשר</a>
-    <a href="#" class="w3-bar-item w3-button">חיפוש</a>
+    <a href="#about" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">על כלבנות טיפולית</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">תמונות</a>
+    <a href="#contact" class="w3-bar-item w3-button  w3-center" onclick="toggleFunction()">צרו קשר</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" style="padding-top: 20px;" id="home">
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-center" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Hugs&Dogs <span class="w3-hide-small"> - כלבנות טיפולית</span></span> 
+    <span class="w3-center w3-display-middle w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Hugs&Dogs <span class="w3-hide-small"> - כלבנות טיפולית</span></span> 
   </div>
 </div>
 
@@ -113,19 +112,15 @@ body, html {
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">פנסיון ביתי</span><br>
-    <!-- Partners -->
-  </div>
-  <div class="w3-quarter w3-section">
+  <div class="w3-third w3-section">
     <span class="w3-xlarge">מטפל התנהגותי</span><br>
     <!-- Projects Done -->
   </div>
-  <div class="w3-quarter w3-section">
+  <div class="w3-third w3-section">
     <span class="w3-xlarge">מאלף כלבים מוסמך</span><br>
     <!-- Happy Clients -->
   </div>
-  <div class="w3-quarter w3-section">
+  <div class="w3-third w3-section">
     <span class="w3-xlarge">מדריך כלבנות טיפולית</span><br>
     <!-- Meetings -->
   </div>
@@ -200,50 +195,42 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <h3 class="w3-center">צרו קשר</h3>
+  <p class="w3-center"><em>מוזמנים לפנות אליי לכל שאלה או בקשה</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6773.922107692666!2d34.87032912697384!3d31.90765553270992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502c9e6506dee57%3A0x29749670f7ab8360!2sMatsli&#39;ah!5e0!3m2!1sen!2sil!4v1605966552171!5m2!1sen!2sil" frameborder="0" style="border:0px; width: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> מושב מצליח, אזור השפלה והמרכז <br>
+
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 050-6357047 <br>
+
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> hugs.and.dogs@gmail.com  <br><br>
+        
+
+        <a href="https://www.facebook.com/hugs.and.dogs" target="_blank"><i class="fa fa-facebook-official fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> פייסבוק</a> 
+
+        <a href="https://www.instagram.com/hugs_and_dogs" target="_blank"><i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> אינסטגרם</a>
+
+        <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank"><i class="fa fa-whatsapp fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> ווצאפ</a> 
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey">חזור למעלה <i class="fa fa-arrow-up w3-margin-right"></i></a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/hugs.and.dogs" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/hugs_and_dogs" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>אתר זה נבנה על ידי <a href="http://cv.shayshabtay.com" title="Shabshay Sites" target="_blank" class="w3-hover-text-green">Shabshay Sites</a></p>
 </footer>
  
 <script>
