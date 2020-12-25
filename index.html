@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>שחר שבתאי - כלבנות טיפולית</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,81 +10,44 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "M PLUS 1p", sans-serif;}
-body, html {
-  height: 100%;
-  color: rgb(85, 85, 85);
-  line-height: 1.8;
-  direction: rtl;
-  scroll-behavior: smooth;   
-}
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+                
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('img4.jpeg');
-  min-height: 80%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("img1.jpeg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("img3.jpeg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
 <body>
 
-<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=484299501592614&autoLogAppEvents=1" nonce="6oODBnAO"></script>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-large">
-  <div class="w3-bar w3-animate-top" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-blue"><i class="fa fa-home"></i> בית</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-blue"><i class="fa fa-dog"></i> כלבנות טיפולית</a>
-    <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-blue"><i class="fa fa-paw"></i> מי אנחנו</a>
-    <a href="#fb" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-blue"><i class="fa fa-facebook-official"></i> עמוד הפייסבוק שלנו</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-blue"><i class="fa fa-book-open"></i> תמונות</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-blue"><i class="fa fa-envelope"></i> צרו קשר</a>
-    <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-green">
-      <i class="fa fa-whatsapp"></i>
-    </a>
-    <a href="https://www.facebook.com/hugs.and.dogs" alt="" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">
-      <i class="fa fa-facebook-official"></i>
-    </a>
-    <a href="https://www.instagram.com/hugs_and_dogs" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-red">
-      <i class="fa fa-instagram"></i>
-    </a>
+  <div class="w3-animate-top">
+    <div class="w3-bar w3-blue-grey" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-hide-medium w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-home"></i> בית</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-dog"></i> כלבנות טיפולית</a>
+      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-paw"></i> מי אנחנו</a>
+      <a href="#fb" class="w3-bar-item w3-hide-medium w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-facebook-official"></i> עמוד הפייסבוק</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-book-open"></i> תמונות</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-envelope"></i> צרו קשר</a>
+      <div class="w3-hide-medium">
+      <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-green">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/hugs.and.dogs" alt="" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://www.instagram.com/hugs_and_dogs" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-red">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </div>
+      <span style="font-family: 'Chelsea Market', cursive; cursor:default;" class="w3-bar-item">
+        Hugs&Dogs
+      </span>
+    </div>
   </div>
-
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#home" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">בית</a>
@@ -96,9 +60,18 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-center" style="white-space:nowrap;">
-    <span class="w3-center w3-display-middle w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Hugs&Dogs <span class="w3-hide-small"> - כלבנות טיפולית</span></span> 
+<div id="home">
+  <div class="bgimg-1 w3-display-container">
+  </div>
+  <div class="w3-center" style="font-weight: bolder;">
+    <span class="w3-center w3-white w3-text-blue-grey w3-round w3-display-middle w3-padding-large w3-wide w3-animate-opacity">
+      <span><h1 style="font-family: 'Chelsea Market', cursive;">Hugs&Dogs</h1></span>
+      <span class="w3-xxlarge fa fa-dog"></span>
+      <br>
+      <span class="w3-xlarge">שחר שבתאי</span>
+      <br>
+      <span class="w3-large">כלבנות טיפולית</span>    
+    </span> 
   </div>
 </div>
 
@@ -106,7 +79,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">על כלבנות טיפולית</h3>
   <p>
-    כלב טיפולי הוא כלב שמאומן לספק חיבה, נחמה ותמיכה לאנשים, לרוב במסגרות כמו בתי חולים, בתי אבות, בתי אבות, בתי ספר, ספריות, הוספיסים או אזורי אסון. 
+    כלב טיפולי הוא כלב שמאומן לספק חיבה, נחמה ותמיכה לאנשים, לרוב במסגרות כמו בתי חולים, בתי אבות, בתי ספר, ספריות, הוספיסים או אזורי אסון. 
   </p>
   <p>
     נוכחותו של הכלב במפגשים עוזרת לנו לפרוץ מחסומים, לנהל ולווסת את הרגשות שלנו, ולרבים מאתנו קל הרבה יותר להיפתח כאשר הכלב הוא שותף פעיל בתהליך חוויתי של טיפול וריפוי. האפשרות להשליך על הכלב פחדים ורגשות שלעיתים קשים לקבלה עצמית, מאפשרת הצפה ועבודה עליהם . 
@@ -287,17 +260,6 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   // captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
