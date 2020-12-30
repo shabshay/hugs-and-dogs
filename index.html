@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>שחר שבתאי - כלבנות טיפולית</title>
+
+<head>
+  <link rel="icon" href="favicon.ico">
+  <title>שחר שבתאי - כלבנות טיפולית</title>
+</head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,276 +17,343 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
-                
+
 
 <body>
 
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=484299501592614&autoLogAppEvents=1" nonce="6oODBnAO"></script>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=484299501592614&autoLogAppEvents=1"
+    nonce="6oODBnAO"></script>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-large">
-  <div class="w3-animate-top">
-    <div class="w3-bar w3-blue-grey" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a href="#home" class="w3-bar-item w3-hide-medium w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-home"></i> בית</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-dog"></i> כלבנות טיפולית</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-paw"></i> מי אנחנו</a>
-      <a href="#fb" class="w3-bar-item w3-hide-medium w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-facebook-official"></i> עמוד הפייסבוק</a>
-      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-book-open"></i> תמונות</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-envelope"></i> צרו קשר</a>
-      <div class="w3-hide-medium">
-        <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-green">
-          <i class="fa fa-whatsapp"></i>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-large">
+    <div class="w3-animate-top">
+      <div class="w3-bar w3-blue-grey" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hover-white w3-hide-large w3-right" href="javascript:void(0);"
+          onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
         </a>
-        <a href="https://www.facebook.com/hugs.and.dogs" alt="" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">
-          <i class="fa fa-facebook-official"></i>
-        </a>
-        <a href="https://www.instagram.com/hugs_and_dogs" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-red">
-          <i class="fa fa-instagram"></i>
-        </a>
+        <a href="#home" class="w3-bar-item w3-hide-medium w3-button w3-hide-small w3-right w3-hover-white"><i
+            class="fa fa-home"></i> בית</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-dog"></i>
+          כלבנות טיפולית</a>
+        <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i class="fa fa-paw"></i> מי
+          אנחנו</a>
+        <a href="#fb" class="w3-bar-item w3-hide-medium w3-button w3-hide-small w3-right w3-hover-white"><i
+            class="fa fa-facebook-official"></i> עמוד הפייסבוק</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i
+            class="fa fa-book-open"></i> תמונות</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"><i
+            class="fa fa-envelope"></i> צרו קשר</a>
+        <div class="w3-hide-medium">
+          <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank"
+            class="w3-bar-item w3-button w3-hide-small w3-hover-green">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="https://www.facebook.com/hugs.and.dogs" alt="" target="_blank"
+            class="w3-bar-item w3-button w3-hide-small w3-hover-blue">
+            <i class="fa fa-facebook-official"></i>
+          </a>
+          <a href="https://www.instagram.com/hugs_and_dogs" target="_blank"
+            class="w3-bar-item w3-button w3-hide-small w3-hover-red">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <span style="font-family: 'Chelsea Market', cursive; cursor:default;" class="w3-bar-item">
+          Hugs&Dogs
+        </span>
+
       </div>
-      <span style="font-family: 'Chelsea Market', cursive; cursor:default;" class="w3-bar-item">
-        Hugs&Dogs        
-      </span>
-      
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-animate-right w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#home" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">בית</a>
+      <a href="#about" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">כלבנות
+        טיפולית</a>
+      <a href="#team" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">מי אנחנו</a>
+      <a href="#fb" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">פייסבוק</a>
+      <a href="#portfolio" class="w3-bar-item w3-hover-blue-grey w3-button w3-center"
+        onclick="toggleFunction()">תמונות</a>
+      <a href="#contact" class="w3-bar-item w3-hover-blue-grey w3-button  w3-center" onclick="toggleFunction()">צרו
+        קשר</a>
     </div>
   </div>
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-animate-right w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#home" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">בית</a>
-    <a href="#about" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">כלבנות טיפולית</a>
-    <a href="#team" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">מי אנחנו</a>
-    <a href="#fb" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">פייסבוק</a>
-    <a href="#portfolio" class="w3-bar-item w3-hover-blue-grey w3-button w3-center" onclick="toggleFunction()">תמונות</a>
-    <a href="#contact" class="w3-bar-item w3-hover-blue-grey w3-button  w3-center" onclick="toggleFunction()">צרו קשר</a>
-  </div>
-</div>
 
-<!-- First Parallax Image with Logo Text -->
-<div id="home">
-  <div class="w3-center w3-display-container" style="font-weight: bolder;">
-    <div class="bgimg-1 w3-display-container">
-    </div>
+  <!-- First Parallax Image with Logo Text -->
+  <div id="home">
+    <div class="w3-center w3-display-container" style="font-weight: bolder;">
+      <div class="bgimg-1 w3-display-container">
+      </div>
 
-    <div class="w3-center w3-display-middle w3-border w3-text-white w3-text-blue-grey w3-round w3-padding w3-wide w3-animate-opacity">
-      <span><h2 style="font-family: 'Chelsea Market', cursive;">Hugs&Dogs</h2></span>
-      <span><h3> שחר שבתאי </h3></span>
-      <span class="w3-hide-small"><h5> כלבנות טיפולית </h5></span>
-      <a href="#contact" class="w3-button w3-round w3-medium w3-hover-white">        
+      <div
+        class="w3-center w3-display-middle w3-border w3-text-white w3-text-blue-grey w3-round-xxlarge  w3-padding w3-wide w3-animate-opacity">
+        <span>
+          <h2 style="font-family: 'Chelsea Market', cursive;">Hugs&Dogs</h2>
+        </span>
+        <span>
+          <h3> שחר שבתאי </h3>
+        </span>
+        <span class="w3-hide-small">
+          <h5> כלבנות טיפולית </h5>
+        </span>
+        <a href="#contact" class="w3-button w3-hover-white w3-hover-opacity w3-round-large w3-medium">
           צרו קשר <i class="fa fa-phone"></i>
-      </a>
-    </div>  
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-blue-grey w3-padding-16">
-  <div class="w3-third w3-section">
-    <span class="w3-xlarge">מטפל התנהגותי</span><br>
-  </div>
-  <div class="w3-third w3-section">
-    <span class="w3-xlarge">מאלף כלבים מוסמך</span><br>
-  </div>
-  <div class="w3-third w3-section">
-    <span class="w3-xlarge">מדריך כלבנות טיפולית</span><br>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">על כלבנות טיפולית</h3>
-  <p>
-    כלב טיפולי הוא כלב שמאומן לספק חיבה, נחמה ותמיכה לאנשים, לרוב במסגרות כמו בתי חולים, בתי אבות, בתי ספר, ספריות, הוספיסים או אזורי אסון. 
-  </p>
-  <p>
-    נוכחותו של הכלב במפגשים עוזרת לנו לפרוץ מחסומים, לנהל ולווסת את הרגשות שלנו, ולרבים מאתנו קל הרבה יותר להיפתח כאשר הכלב הוא שותף פעיל בתהליך חוויתי של טיפול וריפוי. האפשרות להשליך על הכלב פחדים ורגשות שלעיתים קשים לקבלה עצמית, מאפשרת הצפה ועבודה עליהם . 
-  </p>
-  <p>
-    פעולות טיפול בכלב כמו ליטוף, האכלה ויציאה לטיולים, יוצרות אצל המטופל תחושה של מטפל . כמו כן, עבודה על פקודות, משחק וטריקים עם הכלב, מעצימות את תחושת המסוגלות, מנהיגות וההצלחה. 
-  </p>
-  <p>
-    המרחב הטיפולי הוא נעים ומזמין, ותפקידי הוא לאבחן וליצור ביחד עם הכלב את התכנית המתאימה כדי לתווך את התהליך לכל אחד ואחת.
-  </p>
-  <p>
-    ניתן לעבוד על מגוון רחב של מיומנויות חשובות כגון:
-    <div class="w3-row w3-center w3-padding-5">
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> העלאת הביטחון והדימוי העצמי</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> הגברת המיקוד והקשב</div>      
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> ראיית האחר</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> פיתוח אמפתיה</div>
-    </div>
-    <div class="w3-row w3-center w3-padding-5 w3-hide-small">
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> חווית הצלחה</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> פיתוח מיומנויות חברתיות</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> חיזוק שפת גוף וקשר עין</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> התמודדות בדחיית סיפוקים</div>
-    </div>
-    <div class="w3-row w3-center w3-padding-5 w3-hide-small">
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> שיפור מצב הרוח</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> פיתוח כושר מנהיגות</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> ויסות חושי ורגשי</div>
-      <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> שיפור תפקוד מוטורי וקוגניטיבי</div>
-    </div>
-  </p>
-  
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">מי אנחנו</span>
-  </div>
-</div>
-
-<!-- about us -->
-<div class="w3-content w3-container w3-padding-64" id="team">
-  <h3 class="w3-center">מי אנחנו</h3>
-  <div class="w3-col m6 w3-center w3-padding-large">
-    <p><b><i class="fa fa-user w3-margin-right"></i> שחר שבתאי - מאלף מקצועי</b></p><br>
-    <img style="border-radius: 50%;" src="profile.jpg" class="w3-round w3-image w3-opacity-min w3-hover-opacity-off" alt="Photo of Me" width="350" height="350">
-  </div>
-
-  <!-- Hide this text on small devices -->
-  <div class="w3-col m6 w3-hide-small w3-padding-large">
-    <p>
-      כדי שנוכל ליצור לעצמנו מערכת יחסים טובה ובריאה, אני מאמין שכמו אצלנו בני האדם ככה גם עם הכלבים, זה מתחיל ונגמר בתקשורת נכונה.
-      אם נבין ונלמד את צרכיו של הצד השני, ככה גם נוכל ללמד אותו להבין אותנו.
-      משמעת וגבולות ברורים הם כלים חשובים ביצירת תקשורת ואמון בינכם לבין כלביכם.
-      כדי שנוכל לחיות יחד בהרמוניה כל הדברים הללו חייבים להתקיים.
-  </p>
-  </div>
-</div>
-
-<!-- Facebook Page -->
-<div class="w3-content w3-container w3-center" id="fb">
-  <h3 class="w3-center">פייסבוק</h3>
-  <div class="fb-page" data-href="https://www.facebook.com/hugs.and.dogs/" data-tabs="timeline, messages" data-width="400" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hugs.and.dogs/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hugs.and.dogs/">‎שחר שבתאי - כלבנות טיפולית‎</a></blockquote></div>
-</div>
-
-<br>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">תמונות</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">תמונות</h3> <br>
-  <!-- <p class="w3-center"><em>תמונות מהחוויות שלנו</em></p><br> -->
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="img1.jpeg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="img5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">צרו קשר</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">צרו קשר</h3>
-  <p class="w3-center"><em>מוזמנים לפנות אליי לכל שאלה או בקשה</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6773.922107692666!2d34.87032912697384!3d31.90765553270992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502c9e6506dee57%3A0x29749670f7ab8360!2sMatsli&#39;ah!5e0!3m2!1sen!2sil!4v1605966552171!5m2!1sen!2sil" frameborder="0" style="border:0px; width: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-margin-bottom">
-        
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> מושב מצליח, אזור השפלה והמרכז <br>
-
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 050-6357047 <br>
-
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> hugs.and.dogs@gmail.com  <br><br>
-        
-
-        <a href="https://www.facebook.com/hugs.and.dogs" target="_blank"><i class="fa fa-facebook-official fa-fw w3-hover-text-black w3-large w3-margin-right"></i> פייסבוק</a> 
-
-        <a href="https://www.instagram.com/hugs_and_dogs" target="_blank"><i class="fa fa-instagram fa-fw w3-hover-text-black w3-large w3-margin-right"></i> אינסטגרם</a>
-
-        <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank"><i class="fa fa-whatsapp fa-fw w3-hover-text-black w3-large w3-margin-right"></i> ווצאפ</a> 
+        </a>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey">חזור למעלה <i class="fa fa-arrow-up w3-margin-right"></i></a>
-  <p>אתר זה נבנה על ידי <a href="http://cv.shayshabtay.com" title="Shabshay Sites" target="_blank" class="w3-hover-text-green">Shabshay Sites</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  // captionText.innerHTML = element.alt;
-}
+  <div class="w3-row w3-center w3-blue-grey w3-padding-16">
+    <div class="w3-third w3-section">
+      <span class="w3-xlarge">מטפל התנהגותי</span><br>
+    </div>
+    <div class="w3-third w3-section">
+      <span class="w3-xlarge">מאלף כלבים מוסמך</span><br>
+    </div>
+    <div class="w3-third w3-section">
+      <span class="w3-xlarge">מדריך כלבנות טיפולית</span><br>
+    </div>
+  </div>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+  <!-- Container (About Section) -->
+  <!-- <div class="w3-row w3-padding-16">
+    <div class="w3-third w3-section">
+      <span class="w3-xlarge">מטפל התנהגותי</span><br>
+    </div>
+  </div> -->
+
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">על כלבנות טיפולית</h3>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img style="border-radius: 45%;" src="img11.jpg" class="w3-round w3-image w3-opacity-min" alt="" width="400"
+        height="400">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        כלב טיפולי הוא כלב שמאומן לספק חיבה, נחמה ותמיכה לאנשים, לרוב במסגרות כמו בתי חולים, בתי אבות, בתי ספר, ספריות,
+        הוספיסים או אזורי אסון.
+      </p>
+      <p>
+        נוכחותו של הכלב במפגשים עוזרת לנו לפרוץ מחסומים, לנהל ולווסת את הרגשות שלנו, ולרבים מאתנו קל הרבה יותר להיפתח
+        כאשר
+        הכלב הוא שותף פעיל בתהליך חוויתי של טיפול וריפוי. האפשרות להשליך על הכלב פחדים ורגשות שלעיתים קשים לקבלה עצמית,
+        מאפשרת הצפה ועבודה עליהם .
+      </p>
+      <p>
+        פעולות טיפול בכלב כמו ליטוף, האכלה ויציאה לטיולים, יוצרות אצל המטופל תחושה של מטפל . כמו כן, עבודה על פקודות,
+        משחק
+        וטריקים עם הכלב, מעצימות את תחושת המסוגלות, מנהיגות וההצלחה.
+      </p>
+      <p>
+        המרחב הטיפולי הוא נעים ומזמין, ותפקידי הוא לאבחן וליצור ביחד עם הכלב את התכנית המתאימה כדי לתווך את התהליך לכל
+        אחד
+        ואחת.
+      </p>
+    </div>
+    <div class="w3-center">
+      <p>
+        <u>
+        ניתן לעבוד על מגוון רחב של מיומנויות חשובות כגון:
+      </u>
+      </p>
+      <div class="w3-row w3-center w3-padding-5">
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> העלאת הביטחון והדימוי העצמי</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> הגברת המיקוד והקשב</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> ראיית האחר</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> פיתוח אמפתיה</div>
+      </div>
+      <div class="w3-row w3-center w3-padding-5 w3-hide-small">
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> חווית הצלחה</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> פיתוח מיומנויות חברתיות</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> חיזוק שפת גוף וקשר עין</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> התמודדות בדחיית סיפוקים</div>
+      </div>
+      <div class="w3-row w3-center w3-padding-5 w3-hide-small">
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> שיפור מצב הרוח</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> פיתוח כושר מנהיגות</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> ויסות חושי ורגשי</div>
+        <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> שיפור תפקוד מוטורי וקוגניטיבי</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">קצת עלינו</span>
+    </div>
+  </div>
+
+  <!-- about us -->
+  <div class="w3-content w3-container w3-padding-64" id="team">
+    <h3 class="w3-center">מי אנחנו</h3>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i> שחר שבתאי - מאלף מקצועי</b></p><br>
+      <img style="border-radius: 50%;" src="profile.jpg" class="w3-round w3-image w3-opacity-min w3-hover-opacity-off"
+        alt="Photo of Me" width="350" height="350">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        כדי שנוכל ליצור לעצמנו מערכת יחסים טובה ובריאה, אני מאמין שכמו אצלנו בני האדם ככה גם עם הכלבים, זה מתחיל ונגמר
+        בתקשורת נכונה.
+        אם נבין ונלמד את צרכיו של הצד השני, ככה גם נוכל ללמד אותו להבין אותנו.
+        משמעת וגבולות ברורים הם כלים חשובים ביצירת תקשורת ואמון בינכם לבין כלביכם.
+        כדי שנוכל לחיות יחד בהרמוניה כל הדברים הללו חייבים להתקיים.
+      </p>
+    </div>
+  </div>
+
+  <!-- Facebook Page -->
+  <div class="w3-content w3-container w3-center" id="fb">
+    <h3 class="w3-center">פייסבוק</h3>
+    <div class="fb-page" data-href="https://www.facebook.com/hugs.and.dogs/" data-tabs="timeline, messages"
+      data-width="400" data-height="" data-small-header="false" data-adapt-container-width="true"
+      data-hide-cover="false" data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/hugs.and.dogs/" class="fb-xfbml-parse-ignore"><a
+          href="https://www.facebook.com/hugs.and.dogs/">‎שחר שבתאי - כלבנות טיפולית‎</a></blockquote>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">תמונות</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">תמונות</h3> <br>
+    <!-- <p class="w3-center"><em>תמונות מהחוויות שלנו</em></p><br> -->
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="img1.jpeg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="img5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="My beloved typewriter">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Empty ghost train">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      </div>
+      <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">צרו קשר</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">צרו קשר</h3>
+    <p class="w3-center"><em>מוזמנים לפנות אליי לכל שאלה או בקשה</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6773.922107692666!2d34.87032912697384!3d31.90765553270992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502c9e6506dee57%3A0x29749670f7ab8360!2sMatsli&#39;ah!5e0!3m2!1sen!2sil!4v1605966552171!5m2!1sen!2sil"
+          frameborder="0" style="border:0px; width: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-margin-bottom">
+
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> מושב מצליח, אזור השפלה
+          והמרכז <br>
+
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 050-6357047 <br>
+
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> hugs.and.dogs@gmail.com
+          <br><br>
+
+
+          <a href="https://www.facebook.com/hugs.and.dogs" target="_blank"><i
+              class="fa fa-facebook-official fa-fw w3-hover-text-black w3-large w3-margin-right"></i> פייסבוק</a>
+
+          <a href="https://www.instagram.com/hugs_and_dogs" target="_blank"><i
+              class="fa fa-instagram fa-fw w3-hover-text-black w3-large w3-margin-right"></i> אינסטגרם</a>
+
+          <a href="https://api.whatsapp.com/send?phone=972506357047" target="_blank"><i
+              class="fa fa-whatsapp fa-fw w3-hover-text-black w3-large w3-margin-right"></i> ווצאפ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey">חזור למעלה <i class="fa fa-arrow-up w3-margin-right"></i></a>
+    <p>אתר זה נבנה על ידי <a href="http://cv.shayshabtay.com" title="Shabshay Sites" target="_blank"
+        class="w3-hover-text-green">Shabshay Sites</a></p>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      // captionText.innerHTML = element.alt;
     }
-}
-</script>
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 
 </body>
+
 </html>
