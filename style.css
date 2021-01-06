@@ -17,22 +17,37 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
+  background-attachment: scroll;
   background-image: url('img1.jpeg');
-  min-height: 830px;
-  filter: brightness(0.55);
-  animation: shrink 10s infinite alternate;
-}
-
-.animate {
-  animation: shrink 10s infinite alternate;
+  min-height: 800px;
+  filter: brightness(0.45);
+  animation: slidebg 70s infinite alternate;
 }
 
 @keyframes shrink {
   0% {
-    background-size: 120% 115%;
+    background-size: 100% 100%;
   }
   100% {
-    background-size: 110% 105%;
+    background-size: 110% 110%;
+  }
+}
+
+@keyframes slidebg {
+  0% {
+    background-image: url('img1.jpeg');
+  }
+  25% {
+    background-image: url('img4.jpeg');
+  }
+  50% {
+    background-image: url('img6.jpeg');
+  }
+  75% {
+    background-image: url('img8.jpeg');
+  }
+  100% {
+    background-image: url('img5.jpeg');
   }
 }
 
@@ -70,5 +85,5 @@ body, html {
 }
 
 a {
-  transition: 0.5s;
+  transition: 0.4s;
 }
