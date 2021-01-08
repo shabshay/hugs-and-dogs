@@ -21,7 +21,7 @@ body, html {
   background-image: url('img1.jpeg');
   min-height: 800px;
   filter: brightness(0.45);
-  animation: slidebg 70s infinite alternate;
+  animation: slidebg 30s infinite alternate;
 }
 
 .box-shadow {
@@ -42,13 +42,13 @@ body, html {
     background-image: url('img1.jpeg');
   }
   25% {
-    background-image: url('img4.jpeg');
+    background-image: url('img8.jpeg');
   }
   50% {
     background-image: url('img6.jpeg');
   }
   75% {
-    background-image: url('img8.jpeg');
+    background-image: url('img4.jpeg');
   }
   100% {
     background-image: url('img5.jpeg');
@@ -90,4 +90,13 @@ body, html {
 
 a {
   transition: 0.4s;
+}
+
+.hover-bottom-border a {
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.hover-bottom-border a:hover {
+  border-bottom: 1px solid;
 }
