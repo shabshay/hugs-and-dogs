@@ -19,7 +19,7 @@ body, html {
 .bgimg-1 {
   background-attachment: scroll;
   background-image: url('img1.jpeg');
-  min-height: 800px;
+  min-height: 740px;
   filter: brightness(0.45);
   animation: slidebg 30s infinite alternate;
 }
@@ -79,7 +79,7 @@ body, html {
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1 {
     background-attachment: scroll;
-    min-height: 550px;
+    min-height: 400px;
   }
 
   .bgimg-2, .bgimg-3, .bgimg-4 {
