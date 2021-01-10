@@ -98,7 +98,7 @@
             צרו קשר <i class="fa fa-phone"></i>
           </a>
         </span>
-        
+
       </div>
     </div>
   </div>
@@ -171,7 +171,6 @@
         <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> ויסות חושי ורגשי</div>
         <div class="w3-quarter w3-section"><span class="fa fa-paw w3-small"></span> שיפור תפקוד מוטורי וקוגניטיבי</div>
       </div>
-
     </div>
   </div>
 
@@ -268,47 +267,31 @@
   <!-- Container (Portfolio Section) -->
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center">תמונות</h3> <br>
-    <!-- <p class="w3-center"><em>תמונות מהחוויות שלנו</em></p><br> -->
 
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
-        <img src="img1.jpeg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity">
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img src="img2.jpeg" style="width:100%">
+        <img src="img1.jpeg" style="width:100%">
+        <img src="img11.jpg" style="width:100%">
       </div>
-
-      <div class="w3-col m3">
-        <img src="img2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="column">
+        <img src="img8.jpeg" style="width:100%">
+        <img src="img9.jpeg" style="width:100%">
+        <img src="img1.jpeg" style="width:100%">
       </div>
-
-      <div class="w3-col m3">
-        <img src="img3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="column">
+        <img src="img4.jpeg" style="width:100%">
+        <img src="img5.jpeg" style="width:100%">
+        <img src="img6.jpeg" style="width:100%">
       </div>
-
-      <div class="w3-col m3">
-        <img src="img4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="column">
+        <img src="img12.jpg" style="width:100%">
+        <img src="img2.jpeg" style="width:100%">
+        <img src="img4.jpeg" style="width:100%">
       </div>
     </div>
 
-    <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="img5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="img6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="My beloved typewriter">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="img7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="Empty ghost train">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="img8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-      </div>
-      <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
-    </div>
   </div>
 
   <!-- Modal for full size images on click-->
@@ -387,7 +370,7 @@
   <script>
     // Modal Image Gallery
     function onClick(element) {
-      document.getElementById("img01").src = element.src;
+      document.getElementById("img01").src = element;
       document.getElementById("modal01").style.display = "block";
       var captionText = document.getElementById("caption");
       // captionText.innerHTML = element.alt;
@@ -401,6 +384,12 @@
       } else {
         x.className = x.className.replace(" w3-show", "");
       }
+    }
+
+    var images = document.getElementsByTagName('img');
+    for (var i = 0; i < images.length; i++) {
+      console.log(images[i].src)
+      images[i].setAttribute( "onClick", "javascript: onClick('" + images[i].src + "');" );
     }
 
   </script>
